@@ -36,6 +36,7 @@
 		C44EAFF62684424600277DE6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFF42684424600277DE6 /* AboutViewController.swift */; };
 		C44EAFF72684424600277DE6 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFF52684424600277DE6 /* AboutViewController.xib */; };
 		C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFC268447EF00277DE6 /* Extensions.swift */; };
+		C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFE26847EF400277DE6 /* CoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		C44EAFF42684424600277DE6 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		C44EAFF52684424600277DE6 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		C44EAFFC268447EF00277DE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C44EAFFE26847EF400277DE6 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				C44EAFFC268447EF00277DE6 /* Extensions.swift */,
+				C44EAFFE26847EF400277DE6 /* CoreData.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				C44EAFD3268440E700277DE6 /* SearchViewController.swift in Sources */,
 				C44EAFCF268440D000277DE6 /* SettingViewController.swift in Sources */,
 				C44EAFF12684421200277DE6 /* ChangeLanguageViewController.swift in Sources */,
+				C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */,
 				C44EAFED268441FD00277DE6 /* HistoryViewController.swift in Sources */,
 				C4054F67268433DF00128F3E /* AppDelegate.swift in Sources */,
 				C44EAFE62684418900277DE6 /* API.swift in Sources */,
