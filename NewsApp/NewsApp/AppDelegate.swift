@@ -25,8 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let homeVC = HomeViewController()
         self.window?.rootViewController = homeVC
         self.window?.makeKeyAndVisible()
-        
-        // Test
-        CoreData.coreData.saveContext()
+
+        CoreData.shared.saveContext()
     }
 }

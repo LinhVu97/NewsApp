@@ -1,4 +1,11 @@
-disabled_rules:
+disabled_rules: # rule identifiers turned on by default to exclude from running
+
+    - trailing_whitespace
+    - nesting
+    - variable_name
+    - large_tuple
+    - multiple_closures_with_trailing_closure
+    - opt_in_rules
 
 trailing_whitespace:
 nesting:

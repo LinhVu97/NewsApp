@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 class CoreData {
-    static let coreData = CoreData()
+    static let shared = CoreData()
     
     // MARK: - Core Data stack
         /// Func connect to Core Data
@@ -32,7 +32,6 @@ class CoreData {
             do {
                 try context.save()
             } catch {
-
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
