@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C4054F67268433DF00128F3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4054F66268433DF00128F3E /* AppDelegate.swift */; };
-		C4054F69268433DF00128F3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4054F68268433DF00128F3E /* SceneDelegate.swift */; };
 		C4054F71268433DF00128F3E /* NewsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4054F6F268433DF00128F3E /* NewsApp.xcdatamodeld */; };
 		C4054F73268433E000128F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4054F72268433E000128F3E /* Assets.xcassets */; };
 		C4054F76268433E000128F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4054F74268433E000128F3E /* LaunchScreen.storyboard */; };
@@ -59,7 +58,6 @@
 /* Begin PBXFileReference section */
 		C4054F63268433DF00128F3E /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4054F66268433DF00128F3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4054F68268433DF00128F3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4054F70268433DF00128F3E /* NewsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsApp.xcdatamodel; sourceTree = "<group>"; };
 		C4054F72268433E000128F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4054F75268433E000128F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				C4054F9A2684360300128F3E /* Views */,
 				C4054F99268435FF00128F3E /* Models */,
 				C4054F66268433DF00128F3E /* AppDelegate.swift */,
-				C4054F68268433DF00128F3E /* SceneDelegate.swift */,
 				C4054F72268433E000128F3E /* Assets.xcassets */,
 				C4054F74268433E000128F3E /* LaunchScreen.storyboard */,
 				C4054F77268433E000128F3E /* Info.plist */,
@@ -452,7 +449,6 @@
 				C44EAFE62684418900277DE6 /* API.swift in Sources */,
 				C44EAFE9268441CC00277DE6 /* DetailNewsViewController.swift in Sources */,
 				C4054F71268433DF00128F3E /* NewsApp.xcdatamodeld in Sources */,
-				C4054F69268433DF00128F3E /* SceneDelegate.swift in Sources */,
 				C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */,
 				C44EAFF62684424600277DE6 /* AboutViewController.swift in Sources */,
 				C44EAFDF2684415000277DE6 /* TechViewController.swift in Sources */,
