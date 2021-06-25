@@ -37,8 +37,12 @@
 		C44EAFF72684424600277DE6 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFF52684424600277DE6 /* AboutViewController.xib */; };
 		C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFC268447EF00277DE6 /* Extensions.swift */; };
 		C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFE26847EF400277DE6 /* CoreData.swift */; };
+<<<<<<< HEAD
 		C4F8FFCE2685C200009A43CD /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8FFCC2685C200009A43CD /* TabbarViewController.swift */; };
 		C4F8FFCF2685C200009A43CD /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F8FFCD2685C200009A43CD /* TabbarViewController.xib */; };
+=======
+		C4F8FFBA268581F0009A43CD /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8FFB9268581F0009A43CD /* News.swift */; };
+>>>>>>> 872f004 (Call API)
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +99,12 @@
 		C44EAFF52684424600277DE6 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		C44EAFFC268447EF00277DE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C44EAFFE26847EF400277DE6 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		C4F8FFCC2685C200009A43CD /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		C4F8FFCD2685C200009A43CD /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
+=======
+		C4F8FFB9268581F0009A43CD /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+>>>>>>> 872f004 (Call API)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				C44EAFE52684418900277DE6 /* API.swift */,
+				C4F8FFB9268581F0009A43CD /* News.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -525,6 +534,7 @@
 				C4F8FFCE2685C200009A43CD /* TabbarViewController.swift in Sources */,
 				C44EAFD92684411D00277DE6 /* BusinessViewController.swift in Sources */,
 				C44EAFD3268440E700277DE6 /* SearchViewController.swift in Sources */,
+				C4F8FFBA268581F0009A43CD /* News.swift in Sources */,
 				C44EAFCF268440D000277DE6 /* SettingViewController.swift in Sources */,
 				C44EAFF12684421200277DE6 /* ChangeLanguageViewController.swift in Sources */,
 				C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */,

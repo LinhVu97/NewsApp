@@ -12,6 +12,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        APIManager.shared.getData(query: "business") { result in
+            print(result)
+        }
     }
 
     // Setup view
