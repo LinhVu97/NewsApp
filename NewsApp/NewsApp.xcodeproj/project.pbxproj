@@ -37,6 +37,8 @@
 		C44EAFF72684424600277DE6 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFF52684424600277DE6 /* AboutViewController.xib */; };
 		C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFC268447EF00277DE6 /* Extensions.swift */; };
 		C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFE26847EF400277DE6 /* CoreData.swift */; };
+		C4F8FFCE2685C200009A43CD /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8FFCC2685C200009A43CD /* TabbarViewController.swift */; };
+		C4F8FFCF2685C200009A43CD /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F8FFCD2685C200009A43CD /* TabbarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		C44EAFF52684424600277DE6 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		C44EAFFC268447EF00277DE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C44EAFFE26847EF400277DE6 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		C4F8FFCC2685C200009A43CD /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		C4F8FFCD2685C200009A43CD /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,11 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				C44EAFF82684426100277DE6 /* Custom View */,
-				C44EAFF32684422E00277DE6 /* Cell */,
-				C44EAFD62684410900277DE6 /* Home Categories */,
-				C44EAFFA268442CA00277DE6 /* Setting */,
-				C44EAFD2268440E700277DE6 /* SearchViewController.xib */,
-				C44EAFE8268441CC00277DE6 /* DetailNewsViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,10 +199,17 @@
 		C4054F9B2684360900128F3E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C44EAFD5268440FA00277DE6 /* Home Categories */,
+				C4F8FFCB2685C1DE009A43CD /* TabbarVC */,
+				C4F8FFC22685BE23009A43CD /* HomeVC */,
+				C4F8FFC32685BE42009A43CD /* BusinessVC */,
+				C4F8FFC42685BE54009A43CD /* TechVC */,
+				C4F8FFC52685BE5D009A43CD /* SportVC */,
 				C44EAFF9268442A200277DE6 /* Setting */,
-				C44EAFD1268440E700277DE6 /* SearchViewController.swift */,
-				C44EAFE7268441CC00277DE6 /* DetailNewsViewController.swift */,
+				C4F8FFC62685BEB5009A43CD /* HistoryVC */,
+				C4F8FFC72685BEC0009A43CD /* ChangLanguageVC */,
+				C4F8FFC82685BECB009A43CD /* AboutVC */,
+				C4F8FFC92685BF12009A43CD /* SearchVC */,
+				C4F8FFCA2685BF1F009A43CD /* DetailNewsVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,33 +221,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C44EAFD5268440FA00277DE6 /* Home Categories */ = {
-			isa = PBXGroup;
-			children = (
-				C4054F9D2684362200128F3E /* HomeViewController.swift */,
-				C44EAFD72684411D00277DE6 /* BusinessViewController.swift */,
-				C44EAFDD2684415000277DE6 /* TechViewController.swift */,
-				C44EAFE12684417800277DE6 /* SportViewController.swift */,
-			);
-			path = "Home Categories";
-			sourceTree = "<group>";
-		};
-		C44EAFD62684410900277DE6 /* Home Categories */ = {
-			isa = PBXGroup;
-			children = (
-				C4054F9E2684362200128F3E /* HomeViewController.xib */,
-				C44EAFD82684411D00277DE6 /* BusinessViewController.xib */,
-				C44EAFDE2684415000277DE6 /* TechViewController.xib */,
-				C44EAFE22684417800277DE6 /* SportViewController.xib */,
-			);
-			path = "Home Categories";
-			sourceTree = "<group>";
-		};
-		C44EAFF32684422E00277DE6 /* Cell */ = {
+		C44EAFF32684422E00277DE6 /* CellBusiness */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Cell;
+			path = CellBusiness;
 			sourceTree = "<group>";
 		};
 		C44EAFF82684426100277DE6 /* Custom View */ = {
@@ -255,20 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				C44EAFCD268440D000277DE6 /* SettingViewController.swift */,
-				C44EAFEB268441FD00277DE6 /* HistoryViewController.swift */,
-				C44EAFEF2684421200277DE6 /* ChangeLanguageViewController.swift */,
-				C44EAFF42684424600277DE6 /* AboutViewController.swift */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		C44EAFFA268442CA00277DE6 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
 				C44EAFCE268440D000277DE6 /* SettingViewController.xib */,
-				C44EAFEC268441FD00277DE6 /* HistoryViewController.xib */,
-				C44EAFF02684421200277DE6 /* ChangeLanguageViewController.xib */,
-				C44EAFF52684424600277DE6 /* AboutViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -280,6 +251,113 @@
 				C44EAFFE26847EF400277DE6 /* CoreData.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C4F8FFC22685BE23009A43CD /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4054F9D2684362200128F3E /* HomeViewController.swift */,
+				C4054F9E2684362200128F3E /* HomeViewController.xib */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFC32685BE42009A43CD /* BusinessVC */ = {
+			isa = PBXGroup;
+			children = (
+				C44EAFF32684422E00277DE6 /* CellBusiness */,
+				C44EAFD72684411D00277DE6 /* BusinessViewController.swift */,
+				C44EAFD82684411D00277DE6 /* BusinessViewController.xib */,
+			);
+			path = BusinessVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFC42685BE54009A43CD /* TechVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4F8FFD02685C411009A43CD /* CellTech */,
+				C44EAFDD2684415000277DE6 /* TechViewController.swift */,
+				C44EAFDE2684415000277DE6 /* TechViewController.xib */,
+			);
+			path = TechVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFC52685BE5D009A43CD /* SportVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4F8FFD12685C425009A43CD /* CellSport */,
+				C44EAFE12684417800277DE6 /* SportViewController.swift */,
+				C44EAFE22684417800277DE6 /* SportViewController.xib */,
+			);
+			path = SportVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFC62685BEB5009A43CD /* HistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				C44EAFEB268441FD00277DE6 /* HistoryViewController.swift */,
+				C44EAFEC268441FD00277DE6 /* HistoryViewController.xib */,
+			);
+			path = HistoryVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFC72685BEC0009A43CD /* ChangLanguageVC */ = {
+			isa = PBXGroup;
+			children = (
+				C44EAFEF2684421200277DE6 /* ChangeLanguageViewController.swift */,
+				C44EAFF02684421200277DE6 /* ChangeLanguageViewController.xib */,
+			);
+			path = ChangLanguageVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFC82685BECB009A43CD /* AboutVC */ = {
+			isa = PBXGroup;
+			children = (
+				C44EAFF52684424600277DE6 /* AboutViewController.xib */,
+				C44EAFF42684424600277DE6 /* AboutViewController.swift */,
+			);
+			path = AboutVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFC92685BF12009A43CD /* SearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				C44EAFD1268440E700277DE6 /* SearchViewController.swift */,
+				C44EAFD2268440E700277DE6 /* SearchViewController.xib */,
+			);
+			path = SearchVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFCA2685BF1F009A43CD /* DetailNewsVC */ = {
+			isa = PBXGroup;
+			children = (
+				C44EAFE7268441CC00277DE6 /* DetailNewsViewController.swift */,
+				C44EAFE8268441CC00277DE6 /* DetailNewsViewController.xib */,
+			);
+			path = DetailNewsVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFCB2685C1DE009A43CD /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4F8FFCC2685C200009A43CD /* TabbarViewController.swift */,
+				C4F8FFCD2685C200009A43CD /* TabbarViewController.xib */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
+		C4F8FFD02685C411009A43CD /* CellTech */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CellTech;
+			sourceTree = "<group>";
+		};
+		C4F8FFD12685C425009A43CD /* CellSport */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CellSport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +468,7 @@
 				C44EAFE42684417800277DE6 /* SportViewController.xib in Resources */,
 				C44EAFCC26843D9E00277DE6 /* .swiftlint.yml in Resources */,
 				C44EAFD0268440D000277DE6 /* SettingViewController.xib in Resources */,
+				C4F8FFCF2685C200009A43CD /* TabbarViewController.xib in Resources */,
 				C44EAFE02684415000277DE6 /* TechViewController.xib in Resources */,
 				C44EAFEA268441CC00277DE6 /* DetailNewsViewController.xib in Resources */,
 				C44EAFF72684424600277DE6 /* AboutViewController.xib in Resources */,
@@ -443,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F8FFCE2685C200009A43CD /* TabbarViewController.swift in Sources */,
 				C44EAFD92684411D00277DE6 /* BusinessViewController.swift in Sources */,
 				C44EAFD3268440E700277DE6 /* SearchViewController.swift in Sources */,
 				C44EAFCF268440D000277DE6 /* SettingViewController.swift in Sources */,

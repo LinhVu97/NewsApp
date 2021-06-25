@@ -14,18 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        setup()
+        
         return true
-    }
-    
-    private func setup() {
-        // Window full screen
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        // Home Controller
-        let homeVC = HomeViewController()
-        self.window?.rootViewController = homeVC
-        self.window?.makeKeyAndVisible()
-
-        CoreData.shared.saveContext()
     }
 }
