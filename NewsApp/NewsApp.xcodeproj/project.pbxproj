@@ -15,6 +15,7 @@
 		C4054F8C268433E000128F3E /* NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4054F8B268433E000128F3E /* NewsAppUITests.swift */; };
 		C4054F9F2684362200128F3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4054F9D2684362200128F3E /* HomeViewController.swift */; };
 		C4054FA02684362200128F3E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4054F9E2684362200128F3E /* HomeViewController.xib */; };
+		C42AF0B92685D852001C7154 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42AF0B82685D852001C7154 /* News.swift */; };
 		C44EAFCC26843D9E00277DE6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFCB26843D9E00277DE6 /* .swiftlint.yml */; };
 		C44EAFCF268440D000277DE6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFCD268440D000277DE6 /* SettingViewController.swift */; };
 		C44EAFD0268440D000277DE6 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFCE268440D000277DE6 /* SettingViewController.xib */; };
@@ -26,7 +27,7 @@
 		C44EAFE02684415000277DE6 /* TechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFDE2684415000277DE6 /* TechViewController.xib */; };
 		C44EAFE32684417800277DE6 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFE12684417800277DE6 /* SportViewController.swift */; };
 		C44EAFE42684417800277DE6 /* SportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFE22684417800277DE6 /* SportViewController.xib */; };
-		C44EAFE62684418900277DE6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFE52684418900277DE6 /* API.swift */; };
+		C44EAFE62684418900277DE6 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFE52684418900277DE6 /* APIError.swift */; };
 		C44EAFE9268441CC00277DE6 /* DetailNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFE7268441CC00277DE6 /* DetailNewsViewController.swift */; };
 		C44EAFEA268441CC00277DE6 /* DetailNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFE8268441CC00277DE6 /* DetailNewsViewController.xib */; };
 		C44EAFED268441FD00277DE6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFEB268441FD00277DE6 /* HistoryViewController.swift */; };
@@ -37,6 +38,9 @@
 		C44EAFF72684424600277DE6 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFF52684424600277DE6 /* AboutViewController.xib */; };
 		C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFC268447EF00277DE6 /* Extensions.swift */; };
 		C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFE26847EF400277DE6 /* CoreData.swift */; };
+		C4AC9E71268A1C4800823D12 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E70268A1C4800823D12 /* APIRequest.swift */; };
+		C4AC9E73268A298000823D12 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E72268A298000823D12 /* APIResponse.swift */; };
+		C4AC9E75268A304A00823D12 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E74268A304A00823D12 /* APIKey.swift */; };
 		C4F8FFCE2685C200009A43CD /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8FFCC2685C200009A43CD /* TabbarViewController.swift */; };
 		C4F8FFCF2685C200009A43CD /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F8FFCD2685C200009A43CD /* TabbarViewController.xib */; };
 /* End PBXBuildFile section */
@@ -73,6 +77,7 @@
 		C4054F8D268433E000128F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4054F9D2684362200128F3E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4054F9E2684362200128F3E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C42AF0B82685D852001C7154 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		C44EAFCB26843D9E00277DE6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C44EAFCD268440D000277DE6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C44EAFCE268440D000277DE6 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
@@ -84,7 +89,7 @@
 		C44EAFDE2684415000277DE6 /* TechViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TechViewController.xib; sourceTree = "<group>"; };
 		C44EAFE12684417800277DE6 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		C44EAFE22684417800277DE6 /* SportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportViewController.xib; sourceTree = "<group>"; };
-		C44EAFE52684418900277DE6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C44EAFE52684418900277DE6 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C44EAFE7268441CC00277DE6 /* DetailNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsViewController.swift; sourceTree = "<group>"; };
 		C44EAFE8268441CC00277DE6 /* DetailNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailNewsViewController.xib; sourceTree = "<group>"; };
 		C44EAFEB268441FD00277DE6 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +100,9 @@
 		C44EAFF52684424600277DE6 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		C44EAFFC268447EF00277DE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C44EAFFE26847EF400277DE6 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		C4AC9E70268A1C4800823D12 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		C4AC9E72268A298000823D12 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		C4AC9E74268A304A00823D12 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		C4F8FFCC2685C200009A43CD /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		C4F8FFCD2685C200009A43CD /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +160,7 @@
 				C4054F9B2684360900128F3E /* Controllers */,
 				C4054F9A2684360300128F3E /* Views */,
 				C4054F99268435FF00128F3E /* Models */,
+				C4E6545C26882AA500272FAE /* Networking */,
 				C4054F66268433DF00128F3E /* AppDelegate.swift */,
 				C4054F72268433E000128F3E /* Assets.xcassets */,
 				C4054F74268433E000128F3E /* LaunchScreen.storyboard */,
@@ -183,7 +192,7 @@
 		C4054F99268435FF00128F3E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C44EAFE52684418900277DE6 /* API.swift */,
+				C42AF0B82685D852001C7154 /* News.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,7 +213,7 @@
 				C4F8FFC32685BE42009A43CD /* BusinessVC */,
 				C4F8FFC42685BE54009A43CD /* TechVC */,
 				C4F8FFC52685BE5D009A43CD /* SportVC */,
-				C44EAFF9268442A200277DE6 /* Setting */,
+				C44EAFF9268442A200277DE6 /* SettingVC */,
 				C4F8FFC62685BEB5009A43CD /* HistoryVC */,
 				C4F8FFC72685BEC0009A43CD /* ChangLanguageVC */,
 				C4F8FFC82685BECB009A43CD /* AboutVC */,
@@ -221,13 +230,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C44EAFF32684422E00277DE6 /* CellBusiness */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CellBusiness;
-			sourceTree = "<group>";
-		};
 		C44EAFF82684426100277DE6 /* Custom View */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,13 +237,13 @@
 			path = "Custom View";
 			sourceTree = "<group>";
 		};
-		C44EAFF9268442A200277DE6 /* Setting */ = {
+		C44EAFF9268442A200277DE6 /* SettingVC */ = {
 			isa = PBXGroup;
 			children = (
 				C44EAFCD268440D000277DE6 /* SettingViewController.swift */,
 				C44EAFCE268440D000277DE6 /* SettingViewController.xib */,
 			);
-			path = Setting;
+			path = SettingVC;
 			sourceTree = "<group>";
 		};
 		C44EAFFB268447E300277DE6 /* Helpers */ = {
@@ -251,6 +253,17 @@
 				C44EAFFE26847EF400277DE6 /* CoreData.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C4E6545C26882AA500272FAE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC9E74268A304A00823D12 /* APIKey.swift */,
+				C44EAFE52684418900277DE6 /* APIError.swift */,
+				C4AC9E70268A1C4800823D12 /* APIRequest.swift */,
+				C4AC9E72268A298000823D12 /* APIResponse.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		C4F8FFC22685BE23009A43CD /* HomeVC */ = {
@@ -265,7 +278,6 @@
 		C4F8FFC32685BE42009A43CD /* BusinessVC */ = {
 			isa = PBXGroup;
 			children = (
-				C44EAFF32684422E00277DE6 /* CellBusiness */,
 				C44EAFD72684411D00277DE6 /* BusinessViewController.swift */,
 				C44EAFD82684411D00277DE6 /* BusinessViewController.xib */,
 			);
@@ -275,7 +287,6 @@
 		C4F8FFC42685BE54009A43CD /* TechVC */ = {
 			isa = PBXGroup;
 			children = (
-				C4F8FFD02685C411009A43CD /* CellTech */,
 				C44EAFDD2684415000277DE6 /* TechViewController.swift */,
 				C44EAFDE2684415000277DE6 /* TechViewController.xib */,
 			);
@@ -285,7 +296,6 @@
 		C4F8FFC52685BE5D009A43CD /* SportVC */ = {
 			isa = PBXGroup;
 			children = (
-				C4F8FFD12685C425009A43CD /* CellSport */,
 				C44EAFE12684417800277DE6 /* SportViewController.swift */,
 				C44EAFE22684417800277DE6 /* SportViewController.xib */,
 			);
@@ -344,20 +354,6 @@
 				C4F8FFCD2685C200009A43CD /* TabbarViewController.xib */,
 			);
 			path = TabbarVC;
-			sourceTree = "<group>";
-		};
-		C4F8FFD02685C411009A43CD /* CellTech */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CellTech;
-			sourceTree = "<group>";
-		};
-		C4F8FFD12685C425009A43CD /* CellSport */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CellSport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,14 +526,18 @@
 				C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */,
 				C44EAFED268441FD00277DE6 /* HistoryViewController.swift in Sources */,
 				C4054F67268433DF00128F3E /* AppDelegate.swift in Sources */,
-				C44EAFE62684418900277DE6 /* API.swift in Sources */,
+				C44EAFE62684418900277DE6 /* APIError.swift in Sources */,
 				C44EAFE9268441CC00277DE6 /* DetailNewsViewController.swift in Sources */,
 				C4054F71268433DF00128F3E /* NewsApp.xcdatamodeld in Sources */,
 				C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */,
 				C44EAFF62684424600277DE6 /* AboutViewController.swift in Sources */,
 				C44EAFDF2684415000277DE6 /* TechViewController.swift in Sources */,
+				C4AC9E75268A304A00823D12 /* APIKey.swift in Sources */,
 				C4054F9F2684362200128F3E /* HomeViewController.swift in Sources */,
+				C42AF0B92685D852001C7154 /* News.swift in Sources */,
+				C4AC9E71268A1C4800823D12 /* APIRequest.swift in Sources */,
 				C44EAFE32684417800277DE6 /* SportViewController.swift in Sources */,
+				C4AC9E73268A298000823D12 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
