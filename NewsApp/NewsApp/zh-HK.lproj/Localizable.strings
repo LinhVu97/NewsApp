@@ -1,0 +1,22 @@
+/*
+  Localizable.strings
+  NewsApp
+
+  Created by Vũ Linh on 05/07/2021.
+  
+*/
+
+
+"Home" = "家";
+"Search" = "搜索";
+"Setting" = "环境";
+"Business" = "商业";
+"Technology" = "技术";
+"Sports" = "运动";
+"History" = "历史";
+"Change Language" = "改变语言";
+"Privacy Policy" = "隐私政策";
+"About" = "关于";
+"Error" = "错误";
+"Cannot load data" = "无法加载数据";
+"OK" = "好的";
