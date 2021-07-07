@@ -27,6 +27,8 @@ class CustomTableViewCell: UITableViewCell {
             return
         }
         
-        imageCell.loadImage(url: url)
+        imageCell.loadImage(url: url) { err in
+            fatalError(err.localizedDescription)
+        }
     }
 }

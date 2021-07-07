@@ -46,9 +46,11 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             changeViewController(vc: HistoryViewController(), title: Localized.history)
         case 1:
-            changeViewController(vc: HistoryViewController(), title: Localized.changeLanguage)
+            changeViewController(vc: ChangeLanguageViewController(), title: Localized.changeLanguage)
         case 2:
-            changeViewController(vc: PolicyViewController(), title: Localized.policy)
+            let vc = WKWebViewController()
+            vc.urlString = Query.urlPolicy
+            changeViewController(vc: vc, title: Localized.policy)
         case 3:
             changeViewController(vc: AboutViewController(), title: Localized.about)
         default:

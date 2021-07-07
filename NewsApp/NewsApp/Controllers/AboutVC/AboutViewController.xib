@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="NewsApp" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionAbout" destination="laa-xt-jEu" id="Obf-V9-iOI"/>
+                <outlet property="titleAbout" destination="VgP-dQ-qSo" id="0dN-zk-Nma"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,23 +21,23 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abc-news-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z2D-A7-m5f">
-                    <rect key="frame" x="50" y="44" width="314" height="158"/>
+                    <rect key="frame" x="50" y="44" width="2567" height="158"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgP-dQ-qSo">
-                    <rect key="frame" x="50" y="222" width="314" height="25.5"/>
+                    <rect key="frame" x="50" y="222" width="2567" height="25.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laa-xt-jEu">
-                    <rect key="frame" x="20" y="262.5" width="374" height="161.5"/>
+                    <rect key="frame" x="20" y="262.5" width="2627" height="161.5"/>
                     <string key="text">ABC News is a global diversified media and information services company focused on creating and distributing authoritative and engaging content to consumers and businesses throughout the world. The company comprises businesses across a range of media, including: news and information services, book publishing, digital real estate services, cable network programming in Australia and pay-TV distribution in Australia.</string>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-us" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-pM-YhE">
-                    <rect key="frame" x="10" y="434" width="394" height="388"/>
+                    <rect key="frame" x="10" y="434" width="2647" height="388"/>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

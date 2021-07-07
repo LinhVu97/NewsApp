@@ -24,7 +24,7 @@ class TechViewController: UIViewController {
     // Get Data
     private func getData() {
         setupIndicator(indicator)
-        APIService<Posts>.init(request: APIRequest(query: Query.tech, method: .GET)).callAPI { [weak self] result in
+        APIService<Posts>.init(request: APIRequest(query: Categories.tech.rawValue, method: .GET)).callAPI { [weak self] result in
             switch result {
             case .success(let posts):
                 DispatchQueue.main.async {
@@ -35,7 +35,7 @@ class TechViewController: UIViewController {
                 }
             case .failure(let err):
                 DispatchQueue.main.async {
-                    self?.alertError()
+                    self?.alert(title: Localized.error, message: Localized.cannotLoadData)
                 }
                 print(err)
             }
@@ -65,8 +65,9 @@ extension TechViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        let techNews = techNews[indexPath.row]
         let vc = DetailNewsViewController()
+        vc.model = techNews // Pass Data to DetailNews
         navigationController?.pushViewController(vc, animated: true)
     }
     

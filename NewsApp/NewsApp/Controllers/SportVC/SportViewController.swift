@@ -24,7 +24,8 @@ class SportViewController: UIViewController {
     // Get Data
     private func getData() {
         setupIndicator(indicator)
-        APIService<Posts>.init(request: APIRequest(query: Query.sports, method: .GET)).callAPI { [weak self] result in
+        APIService<Posts>.init(request: APIRequest(query: Categories.sports.rawValue,
+                                                   method: .GET)).callAPI { [weak self] result in
             switch result {
             case .success(let posts):
                 DispatchQueue.main.async {
@@ -35,7 +36,7 @@ class SportViewController: UIViewController {
                 }
             case .failure(let err):
                 DispatchQueue.main.async {
-                    self?.alertError()
+                    self?.alert(title: Localized.error, message: Localized.cannotLoadData)
                 }
                 print(err)
             }
@@ -70,8 +71,9 @@ extension SportViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        let vc = DetailNewsViewController()
+        let sportsNews = sportsNews[indexPath.row]
+        let vc = DetailNewsViewController() // Pass Data to DetailNews
+        vc.model = sportsNews
         navigationController?.pushViewController(vc, animated: true)
     }
 }

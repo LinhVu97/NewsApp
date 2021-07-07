@@ -8,8 +8,13 @@
 import UIKit
 
 class AboutViewController: UIViewController {
-
+    @IBOutlet weak var descriptionAbout: UILabel!
+    @IBOutlet weak var titleAbout: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        descriptionAbout.text = Localized.descriptionAbout
+        titleAbout.text = Localized.about
     }
 }
