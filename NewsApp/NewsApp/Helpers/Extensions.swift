@@ -72,19 +72,3 @@ extension UIViewController {
         present(alert, animated: true, completion: nil)
     }
 }
-
-// MARK: - Extension UIImageView
-extension UIImageView {
-    func loadImage(url: URL) {
-        // Run in background
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-        }
-    }
-}

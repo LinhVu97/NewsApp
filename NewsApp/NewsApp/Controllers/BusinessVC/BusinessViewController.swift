@@ -64,8 +64,9 @@ extension BusinessViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        let businessNews = businessNews[indexPath.row]
         let vc = DetailNewsViewController()
+        vc.model = businessNews // Pass data to DetailNews
         navigationController?.pushViewController(vc, animated: true)
     }
     

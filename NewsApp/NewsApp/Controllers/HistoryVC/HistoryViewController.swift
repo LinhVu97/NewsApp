@@ -8,11 +8,19 @@
 import UIKit
 
 class HistoryViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Navigation Right Button
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "trash"),
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: #selector(removeNews))
     }
 
+    @objc private func removeNews() {
+        
+    }
 }

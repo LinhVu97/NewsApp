@@ -8,15 +8,15 @@
 import UIKit
 import WebKit
 
-class PolicyViewController: UIViewController {
+class WKWebViewController: UIViewController {
     @IBOutlet weak private var webView: WKWebView!
     @IBOutlet weak private var spinner: UIActivityIndicatorView!
     @IBOutlet weak private var backButton: UIBarButtonItem!
     @IBOutlet weak private var fowardButton: UIBarButtonItem!
     @IBOutlet weak private var reloadButton: UIBarButtonItem!
     
-    let urlPolicy = "https://www.abc.net.au/news/politics/"
-    
+    var urlString: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupWebView()
@@ -24,7 +24,12 @@ class PolicyViewController: UIViewController {
     
     // Setup Webview
     private func setupWebView() {
-        guard let url = URL(string: urlPolicy) else {
+        guard let urlString = urlString else {
+            print("Not connect")
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
             return
         }
 
@@ -53,7 +58,7 @@ class PolicyViewController: UIViewController {
     }
 }
 
-extension PolicyViewController: WKNavigationDelegate, WKUIDelegate {
+extension WKWebViewController: WKNavigationDelegate, WKUIDelegate {
     // Called when webview begins receive web contents
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         spinner.startAnimating()

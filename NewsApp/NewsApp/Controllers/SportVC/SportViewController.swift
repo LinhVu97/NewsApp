@@ -70,8 +70,9 @@ extension SportViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        let vc = DetailNewsViewController()
+        let sportsNews = sportsNews[indexPath.row]
+        let vc = DetailNewsViewController() // Pass Data to DetailNews
+        vc.model = sportsNews
         navigationController?.pushViewController(vc, animated: true)
     }
 }
