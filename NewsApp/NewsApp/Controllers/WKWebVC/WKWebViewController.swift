@@ -25,7 +25,6 @@ class WKWebViewController: UIViewController {
     // Setup Webview
     private func setupWebView() {
         guard let urlString = urlString else {
-            print("Not connect")
             return
         }
         

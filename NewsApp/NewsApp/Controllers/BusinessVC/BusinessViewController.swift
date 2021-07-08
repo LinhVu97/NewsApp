@@ -24,7 +24,7 @@ class BusinessViewController: UIViewController {
     // Get Data
     private func getData() {
         setupIndicator(indicator)
-        APIService<Posts>.init(request: APIRequest(query: Query.business, method: .GET)).callAPI { [weak self] result in
+        APIService<Posts>.init(request: APIRequest(query: Categories.business.rawValue, method: .GET)).callAPI { [weak self] result in
             switch result {
             case .success(let posts):
                 DispatchQueue.main.async {
@@ -34,7 +34,7 @@ class BusinessViewController: UIViewController {
                 }
             case .failure(let err):
                 DispatchQueue.main.async {
-                    self?.alertError()
+                    self?.alert(title: Localized.error, message: Localized.cannotLoadData)
                 }
                 print(err)
             }

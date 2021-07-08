@@ -30,7 +30,6 @@ class ChangeLanguageViewController: UIViewController {
     @IBAction func changeEng(_ sender: UIButton) {
         UserDefaults.standard.set("en", forKey: languageKey) // Save value as String
         UserDefaults.standard.synchronize()
-        
     }
     
     @IBAction func changeFr(_ sender: UIButton) {

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DetailNewsViewController: UIViewController {
     @IBOutlet weak private var imageView: UIImageView!
@@ -16,12 +17,14 @@ class DetailNewsViewController: UIViewController {
     @IBOutlet weak private var linkFull: UILabel!
     
     var model: News?
+    var context: NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         tapgesture()
         detailNews()
+        context = AppDelegate.manageObjectContext
         
         // Navigation Right Button
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"),
@@ -49,15 +52,32 @@ class DetailNewsViewController: UIViewController {
         let alert = UIAlertController(title: "",
                                       message: Localized.addToHistory,
                                       preferredStyle: .alert)
+        // Add history
         alert.addAction(UIAlertAction(title: Localized.OK, style: .default, handler: { _ in
-            self.saveData()
+            self.addNews()
+            self.alert(title: Localized.success, message: Localized.success)
         }))
         alert.addAction(UIAlertAction(title: Localized.cancel, style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
     }
     
-    private func saveData() {
+    private func addNews() {
+        guard let model = self.model else {
+            return
+        }
         
+        let news = NewsCore(context: context)
+        news.image = model.thread.mainImage
+        news.title = model.title
+        news.text = model.text
+        news.author = model.author
+        news.published = model.published
+        news.url = model.url
+        news.save {
+            print("Save")
+        } fail: { err in
+            print("Save news fail: \(err.localizedDescription)")
+        }
     }
     
     // MARK: - Detail News
@@ -71,7 +91,9 @@ class DetailNewsViewController: UIViewController {
         guard let url = URL(string: model?.thread.mainImage ?? Query.urlNoImage) else {
             return
         }
-        imageView.loadImage(url: url)
+        imageView.loadImage(url: url) { _ in
+            self.alert(title: Localized.error, message: Localized.cannotLoadData)
+        }
         
         // Date Formatter
         let dateFormatter = DateFormatter()

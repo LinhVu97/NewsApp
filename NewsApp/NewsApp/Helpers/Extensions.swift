@@ -64,9 +64,9 @@ extension UIViewController {
     }
     
     // MARK: - Alert
-    func alertError() {
-        let alert = UIAlertController(title: Localized.error,
-                                      message: Localized.cannotLoadData,
+    func alert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: Localized.OK, style: .default, handler: nil))
         present(alert, animated: true, completion: nil)

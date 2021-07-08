@@ -31,6 +31,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mr7-SR-1vd">
                             <rect key="frame" x="0.0" y="0.0" width="134.5" height="40"/>
                             <state key="normal" title="Business"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="Business"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="buisiness:" destination="-1" eventType="touchUpInside" id="0Ll-wR-vsE"/>
                             </connections>
@@ -38,6 +41,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEg-NY-Fu5">
                             <rect key="frame" x="139.5" y="0.0" width="135" height="40"/>
                             <state key="normal" title="Technology"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="Technology"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="tech:" destination="-1" eventType="touchUpInside" id="MQb-7m-AYH"/>
                             </connections>
@@ -45,6 +51,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCf-yY-rj2">
                             <rect key="frame" x="279.5" y="0.0" width="134.5" height="40"/>
                             <state key="normal" title="Sport"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="Sport"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="sport:" destination="-1" eventType="touchUpInside" id="8g4-oF-pQW"/>
                             </connections>

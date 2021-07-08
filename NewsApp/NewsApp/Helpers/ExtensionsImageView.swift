@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Extension UIImageView
 extension UIImageView {
-    func loadImage(url: URL) {
+    func loadImage(url: URL, fail: ((Error) -> Void)?) {
         let tasks = URLSession.shared.dataTask(with: url) { [weak self] data, _, _ in
             guard let data = data else {
                 return
@@ -21,7 +21,7 @@ extension UIImageView {
                     self?.image = UIImage(data: data)
                 }
             } catch {
-                print(error.localizedDescription)
+                fail?(error)
             }
         }
         tasks.resume()
