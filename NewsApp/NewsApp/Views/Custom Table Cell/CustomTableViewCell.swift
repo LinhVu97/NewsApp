@@ -18,7 +18,15 @@ class CustomTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func model(_ title: String, _ description: String, _ image: String) {
+    // Hàm này sẽ được gọi trước khi cell được tái sử dụng, ta có thể reset lại dữ liệu của các cell trước khi được tái sử dụng.
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageCell.image = nil
+        descriptionCell.text = nil
+        titleCell.text = nil
+    }
+    
+    func setupCell(_ title: String, _ description: String, _ image: String) {
         titleCell.text = title
         descriptionCell.text = description
 

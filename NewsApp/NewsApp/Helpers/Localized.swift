@@ -37,9 +37,11 @@ struct Localized {
     static let eng = "Language.English".localized
     static let fr = "Language.French".localized
     static let vi = "Language.Vietnamese".localized
+    
+    // Empty View
+    static let noData = "EmptyView.No Data".localized
+    static let showData = "EmptyView.Data Display !!!".localized
 
     // swiftlint:disable:next line_length
     static let descriptionAbout = "ABC News is a global diversified media and information services company focused on creating and distributing authoritative and engaging content to consumers and businesses throughout the world. The company comprises businesses across a range of media, including: news and information services, book publishing, digital real estate services, cable network programming in Australia and pay-TV distribution in Australia.".localized
 }
-
-

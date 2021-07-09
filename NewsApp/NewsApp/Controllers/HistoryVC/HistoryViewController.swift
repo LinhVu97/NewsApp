@@ -71,7 +71,7 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
                                                        for: indexPath) as? CustomTableViewCell else {
             return UITableViewCell()
         }
-        cell.model(historyNews.title,
+        cell.setupCell(historyNews.title,
                    historyNews.text ?? "",
                    historyNews.thread.mainImage ?? "")
         return cell

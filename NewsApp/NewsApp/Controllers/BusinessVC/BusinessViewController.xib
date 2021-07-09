@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rVd-y9-iFx">
-                    <rect key="frame" x="0.0" y="44" width="414" height="668"/>
+                    <rect key="frame" x="0.0" y="59" width="414" height="653"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YiZ-C3-CWw">
@@ -37,7 +37,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="rVd-y9-iFx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8W8-Hy-1ZU"/>
-                <constraint firstItem="rVd-y9-iFx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NQ9-4M-j7Q"/>
+                <constraint firstItem="rVd-y9-iFx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="NQ9-4M-j7Q"/>
                 <constraint firstItem="YiZ-C3-CWw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="220" id="eW4-2k-hxE"/>
                 <constraint firstItem="YiZ-C3-CWw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="157" id="nN4-Bj-m0p"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rVd-y9-iFx" secondAttribute="bottom" constant="150" id="wiI-DV-ehY"/>

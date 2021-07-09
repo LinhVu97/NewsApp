@@ -15,17 +15,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak private var businessView: UIView!
     @IBOutlet weak private var techView: UIView!
     @IBOutlet weak private var sportView: UIView!
+    @IBOutlet weak var stackView: UIStackView!
     
     // Create Horizontal Bar
     lazy var horizontalBar: UIView = {
         let horizontalBar = UIView()
         horizontalBar.backgroundColor = UIColor(white: 0.9, alpha: 1)
         horizontalBar.backgroundColor = .systemBlue
-
-        // Frame
-        horizontalBar.frame = CGRect(x: 7, y: 160, width: 105, height: 3)
+        horizontalBar.translatesAutoresizingMaskIntoConstraints = false
         return horizontalBar
     }()
+    
+    var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
     
     let businessVC = BusinessViewController()
     let techVC = TechViewController()
@@ -38,8 +39,8 @@ class HomeViewController: UIViewController {
         
         setupNavigationBar()
         setupViewScrollView()
+        setupHorizontalBar()
         buttonLocalizable()
-        businessButton.isUserInteractionEnabled = false
     }
 
     // MARK: - Setup
@@ -50,6 +51,15 @@ class HomeViewController: UIViewController {
         sportButton.setTitle(Localized.sports, for: .normal)
     }
     
+    // Setup Horizontal Bar
+    func setupHorizontalBar() {
+        horizontalBarLeftAnchorConstraint = horizontalBar.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor)
+        horizontalBarLeftAnchorConstraint?.isActive = true
+        
+        horizontalBar.topAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
+        horizontalBar.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/3).isActive = true
+        horizontalBar.heightAnchor.constraint(equalToConstant: 3).isActive = true
+    }
     // Setup Scroll View
     private func setupViewScrollView() {
         let number: CGFloat = 3
@@ -59,53 +69,37 @@ class HomeViewController: UIViewController {
         setupTabLayout(businessVC, techVC, sportVC, businessView, techView, sportView)
     }
     
-    // Animate Horizontal Bar
-    private func animate(x: CGFloat) {
-        UIView.animate(withDuration: 0.2, delay: 0.1, options: [], animations: {
-            self.horizontalBar.frame = CGRect(x: x, y: 160, width: 105, height: 3)
-        }, completion: nil)
-    }
-    
     // MARK: - Button
     @IBAction func buisiness(_ sender: UIButton) {
-        animate(x: 7)
         // Move content
         scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
-        isUserInteractionEnabled(b1: businessButton, b2: techButton, b3: sportButton)
     }
 
     @IBAction func tech(_ sender: UIButton) {
-        animate(x: 135)
         scrollView.setContentOffset(CGPoint(x: scrollView.frame.width, y: scrollView.contentOffset.y), animated: true)
-        isUserInteractionEnabled(b1: techButton, b2: businessButton, b3: sportButton)
     }
 
     @IBAction func sport(_ sender: UIButton) {
-        animate(x: 265)
         scrollView.setContentOffset(CGPoint(x: scrollView.frame.width * 2, y: scrollView.contentOffset.y),
                                     animated: true)
-        isUserInteractionEnabled(b1: sportButton, b2: businessButton, b3: techButton)
-    }
-    
-    // User Interaction Enable
-    private func isUserInteractionEnabled(b1: UIButton, b2: UIButton, b3: UIButton) {
-        b1.isUserInteractionEnabled = false
-        if b1.isUserInteractionEnabled == false {
-            b2.isUserInteractionEnabled = true
-            b3.isUserInteractionEnabled = true
-        }
     }
 }
 
 extension HomeViewController: UIScrollViewDelegate {
     // Animate Horizontal when Scroll
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.x == 0 {
-            animate(x: 7)
-        } else if scrollView.contentOffset.x == scrollView.frame.width {
-            animate(x: 135)
-        } else if scrollView.contentOffset.x == scrollView.frame.width * 2 {
-            animate(x: 265)
+        horizontalBarLeftAnchorConstraint?.constant = scrollView.contentOffset.x / 3
+        if scrollView.contentOffset.x >= scrollView.bounds.width / 3 {
+            if scrollView.contentOffset.x == scrollView.bounds.width {
+                scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width,
+                                                    y: scrollView.contentOffset.y),
+                                            animated: true)
+            }
+        } else {
+            if scrollView.contentOffset.x == 0 {
+                scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+                scrollView.endEditing(true)
+            }
         }
     }
 }

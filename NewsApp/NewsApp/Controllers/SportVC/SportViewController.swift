@@ -19,6 +19,7 @@ class SportViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         getData()
+        refreshData()
     }
     
     // Get Data
@@ -37,15 +38,37 @@ class SportViewController: UIViewController {
             case .failure(let err):
                 DispatchQueue.main.async {
                     self?.alert(title: Localized.error, message: Localized.cannotLoadData)
+                    self?.indicator.stopAnimating()
+                    self?.indicator.isHidden = true
                 }
                 print(err)
             }
+        }
+    }
+    
+    // MARK: - Refresh Table View
+    private func refreshData() {
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(actionRefresh), for: .valueChanged)
+    }
+    
+    @objc func actionRefresh() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.tableView.refreshControl?.endRefreshing()
+            self.getData()
         }
     }
 }
 
 extension SportViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if sportsNews.count == 0 {
+            let vc = EmptyViewController()
+            tableView.addSub(tableView, vc)
+        } else {
+            tableView.restore()
+        }
+        
         return sportsNews.count
     }
     
@@ -59,7 +82,7 @@ extension SportViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.model(sportsNews.title,
+        cell.setupCell(sportsNews.title,
                    sportsNews.text ?? "No Description",
                    sportsNews.thread.mainImage ?? Query.urlNoImage)
         return cell
