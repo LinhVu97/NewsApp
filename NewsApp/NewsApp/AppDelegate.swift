@@ -11,11 +11,13 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-
+    static var manageObjectContext: NSManagedObjectContext? // Work with database
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Thread.sleep(forTimeInterval: 1.5) // Delay Thread
+        Thread.sleep(forTimeInterval: 0.5) // Delay Thread
         setupView()
+        AppDelegate.manageObjectContext = CoreData.shared.persistentContainer.viewContext // return context of database
         return true
     }
     

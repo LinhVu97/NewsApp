@@ -64,27 +64,11 @@ extension UIViewController {
     }
     
     // MARK: - Alert
-    func alertError() {
-        let alert = UIAlertController(title: Localized.error,
-                                      message: Localized.cannotLoadData,
+    func alert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: Localized.OK, style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
-    }
-}
-
-// MARK: - Extension UIImageView
-extension UIImageView {
-    func loadImage(url: URL) {
-        // Run in background
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-        }
     }
 }

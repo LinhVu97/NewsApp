@@ -36,12 +36,17 @@
 		C44EAFF72684424600277DE6 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44EAFF52684424600277DE6 /* AboutViewController.xib */; };
 		C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFC268447EF00277DE6 /* Extensions.swift */; };
 		C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAFFE26847EF400277DE6 /* CoreData.swift */; };
-		C4842473268CB51C00F2430E /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4842471268CB51C00F2430E /* PolicyViewController.swift */; };
-		C4842474268CB51C00F2430E /* PolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4842472268CB51C00F2430E /* PolicyViewController.xib */; };
+		C450B9BE2695E83F00C6BE1C /* NewsCore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450B9BC2695E83F00C6BE1C /* NewsCore+CoreDataClass.swift */; };
+		C450B9BF2695E83F00C6BE1C /* NewsCore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450B9BD2695E83F00C6BE1C /* NewsCore+CoreDataProperties.swift */; };
+		C453FB1E26953D8000BB08DC /* ExtensionsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453FB1D26953D8000BB08DC /* ExtensionsImageView.swift */; };
+		C4842473268CB51C00F2430E /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4842471268CB51C00F2430E /* WKWebViewController.swift */; };
+		C4842474268CB51C00F2430E /* WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4842472268CB51C00F2430E /* WKWebViewController.xib */; };
 		C49EDF8C268EB4F400CC526D /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49EDF8B268EB4F400CC526D /* Query.swift */; };
+		C4A3E8292697DE68009F7171 /* ExtensionFormateDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E8282697DE68009F7171 /* ExtensionFormateDate.swift */; };
 		C4AC9E71268A1C4800823D12 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E70268A1C4800823D12 /* APIRequest.swift */; };
 		C4AC9E73268A298000823D12 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E72268A298000823D12 /* APIResponse.swift */; };
 		C4AC9E75268A304A00823D12 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E74268A304A00823D12 /* APIKey.swift */; };
+		C4B7FAE52696E3AB00E967A6 /* ExtensionNSManagedObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7FAE42696E3AB00E967A6 /* ExtensionNSManagedObj.swift */; };
 		C4D121FC268B1A4B002CCD0F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D121FA268B1A4B002CCD0F /* CustomTableViewCell.swift */; };
 		C4D121FD268B1A4B002CCD0F /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4D121FB268B1A4B002CCD0F /* CustomTableViewCell.xib */; };
 		C4DA065B2692A38E008C8768 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4DA065D2692A38E008C8768 /* Localizable.strings */; };
@@ -106,19 +111,22 @@
 		C44EAFF52684424600277DE6 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		C44EAFFC268447EF00277DE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C44EAFFE26847EF400277DE6 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
-		C4842471268CB51C00F2430E /* PolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
-		C4842472268CB51C00F2430E /* PolicyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolicyViewController.xib; sourceTree = "<group>"; };
+		C450B9BC2695E83F00C6BE1C /* NewsCore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsCore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C450B9BD2695E83F00C6BE1C /* NewsCore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsCore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C453FB1D26953D8000BB08DC /* ExtensionsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsImageView.swift; sourceTree = "<group>"; };
+		C4842471268CB51C00F2430E /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		C4842472268CB51C00F2430E /* WKWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKWebViewController.xib; sourceTree = "<group>"; };
 		C49EDF8B268EB4F400CC526D /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		C4A3E8282697DE68009F7171 /* ExtensionFormateDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFormateDate.swift; sourceTree = "<group>"; };
 		C4AC9E70268A1C4800823D12 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		C4AC9E72268A298000823D12 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		C4AC9E74268A304A00823D12 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		C4B7FAE42696E3AB00E967A6 /* ExtensionNSManagedObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNSManagedObj.swift; sourceTree = "<group>"; };
 		C4D121FA268B1A4B002CCD0F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C4D121FB268B1A4B002CCD0F /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		C4DA065C2692A38E008C8768 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C4DA065E2692A3C9008C8768 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C4DA065F2692A3D3008C8768 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C4DA06602692A3DD008C8768 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		C4DA06612692A3ED008C8768 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C4DA06632692BEB9008C8768 /* ChangeLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeLanguageViewController.swift; sourceTree = "<group>"; };
 		C4DA06642692BEB9008C8768 /* ChangeLanguageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeLanguageViewController.xib; sourceTree = "<group>"; };
 		C4DA06692692DB13008C8768 /* ExtensionsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsString.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 		C4054F5A268433DF00128F3E = {
 			isa = PBXGroup;
 			children = (
+				C450B9C12695E93200C6BE1C /* CoreData */,
 				C4054F65268433DF00128F3E /* NewsApp */,
 				C4054F7F268433E000128F3E /* NewsAppTests */,
 				C4054F8A268433E000128F3E /* NewsAppUITests */,
@@ -239,7 +248,7 @@
 				C44EAFF9268442A200277DE6 /* SettingVC */,
 				C4DA06622692BEAB008C8768 /* ChangLanguageVC */,
 				C4F8FFC62685BEB5009A43CD /* HistoryVC */,
-				C4842470268CB4E000F2430E /* PolicyWKWeb */,
+				C4842470268CB4E000F2430E /* WKWebVC */,
 				C4F8FFC82685BECB009A43CD /* AboutVC */,
 				C4F8FFC92685BF12009A43CD /* SearchVC */,
 				C4F8FFCA2685BF1F009A43CD /* DetailNewsVC */,
@@ -273,12 +282,24 @@
 		C44EAFFB268447E300277DE6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C44EAFFC268447EF00277DE6 /* Extensions.swift */,
 				C44EAFFE26847EF400277DE6 /* CoreData.swift */,
+				C44EAFFC268447EF00277DE6 /* Extensions.swift */,
 				C4DA06692692DB13008C8768 /* ExtensionsString.swift */,
 				C4DA066B2692DF07008C8768 /* Localized.swift */,
+				C453FB1D26953D8000BB08DC /* ExtensionsImageView.swift */,
+				C4B7FAE42696E3AB00E967A6 /* ExtensionNSManagedObj.swift */,
+				C4A3E8282697DE68009F7171 /* ExtensionFormateDate.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C450B9C12695E93200C6BE1C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C450B9BC2695E83F00C6BE1C /* NewsCore+CoreDataClass.swift */,
+				C450B9BD2695E83F00C6BE1C /* NewsCore+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		C47BD32A2689C2F2000BF3DF /* Custom Table Cell */ = {
@@ -290,13 +311,13 @@
 			path = "Custom Table Cell";
 			sourceTree = "<group>";
 		};
-		C4842470268CB4E000F2430E /* PolicyWKWeb */ = {
+		C4842470268CB4E000F2430E /* WKWebVC */ = {
 			isa = PBXGroup;
 			children = (
-				C4842471268CB51C00F2430E /* PolicyViewController.swift */,
-				C4842472268CB51C00F2430E /* PolicyViewController.xib */,
+				C4842471268CB51C00F2430E /* WKWebViewController.swift */,
+				C4842472268CB51C00F2430E /* WKWebViewController.xib */,
 			);
-			path = PolicyWKWeb;
+			path = WKWebVC;
 			sourceTree = "<group>";
 		};
 		C4DA06622692BEAB008C8768 /* ChangLanguageVC */ = {
@@ -417,6 +438,8 @@
 			dependencies = (
 			);
 			name = NewsApp;
+			packageProductDependencies = (
+			);
 			productName = NewsApp;
 			productReference = C4054F63268433DF00128F3E /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -488,10 +511,10 @@
 				Base,
 				vi,
 				fr,
-				"zh-HK",
-				es,
 			);
 			mainGroup = C4054F5A268433DF00128F3E;
+			packageReferences = (
+			);
 			productRefGroup = C4054F64268433DF00128F3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -516,7 +539,7 @@
 				C44EAFE02684415000277DE6 /* TechViewController.xib in Resources */,
 				C44EAFEA268441CC00277DE6 /* DetailNewsViewController.xib in Resources */,
 				C44EAFF72684424600277DE6 /* AboutViewController.xib in Resources */,
-				C4842474268CB51C00F2430E /* PolicyViewController.xib in Resources */,
+				C4842474268CB51C00F2430E /* WKWebViewController.xib in Resources */,
 				C4D121FD268B1A4B002CCD0F /* CustomTableViewCell.xib in Resources */,
 				C44EAFEE268441FD00277DE6 /* HistoryViewController.xib in Resources */,
 				C44EAFD4268440E800277DE6 /* SearchViewController.xib in Resources */,
@@ -574,6 +597,7 @@
 				C44EAFD92684411D00277DE6 /* BusinessViewController.swift in Sources */,
 				C44EAFD3268440E700277DE6 /* SearchViewController.swift in Sources */,
 				C4D121FC268B1A4B002CCD0F /* CustomTableViewCell.swift in Sources */,
+				C450B9BE2695E83F00C6BE1C /* NewsCore+CoreDataClass.swift in Sources */,
 				C44EAFCF268440D000277DE6 /* SettingViewController.swift in Sources */,
 				C44EAFFF26847EF400277DE6 /* CoreData.swift in Sources */,
 				C4DA06652692BEB9008C8768 /* ChangeLanguageViewController.swift in Sources */,
@@ -581,7 +605,11 @@
 				C4054F67268433DF00128F3E /* AppDelegate.swift in Sources */,
 				C44EAFE62684418900277DE6 /* APIError.swift in Sources */,
 				C44EAFE9268441CC00277DE6 /* DetailNewsViewController.swift in Sources */,
+				C453FB1E26953D8000BB08DC /* ExtensionsImageView.swift in Sources */,
 				C4054F71268433DF00128F3E /* NewsApp.xcdatamodeld in Sources */,
+				C450B9BF2695E83F00C6BE1C /* NewsCore+CoreDataProperties.swift in Sources */,
+				C4A3E8292697DE68009F7171 /* ExtensionFormateDate.swift in Sources */,
+				C4B7FAE52696E3AB00E967A6 /* ExtensionNSManagedObj.swift in Sources */,
 				C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */,
 				C44EAFF62684424600277DE6 /* AboutViewController.swift in Sources */,
 				C44EAFDF2684415000277DE6 /* TechViewController.swift in Sources */,
@@ -590,7 +618,7 @@
 				C4054F9F2684362200128F3E /* HomeViewController.swift in Sources */,
 				C42AF0B92685D852001C7154 /* News.swift in Sources */,
 				C4DA066C2692DF07008C8768 /* Localized.swift in Sources */,
-				C4842473268CB51C00F2430E /* PolicyViewController.swift in Sources */,
+				C4842473268CB51C00F2430E /* WKWebViewController.swift in Sources */,
 				C4AC9E71268A1C4800823D12 /* APIRequest.swift in Sources */,
 				C44EAFE32684417800277DE6 /* SportViewController.swift in Sources */,
 				C4AC9E73268A298000823D12 /* APIResponse.swift in Sources */,
@@ -643,8 +671,6 @@
 				C4DA065C2692A38E008C8768 /* en */,
 				C4DA065E2692A3C9008C8768 /* vi */,
 				C4DA065F2692A3D3008C8768 /* fr */,
-				C4DA06602692A3DD008C8768 /* zh-HK */,
-				C4DA06612692A3ED008C8768 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
