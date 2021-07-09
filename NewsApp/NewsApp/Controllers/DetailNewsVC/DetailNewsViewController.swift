@@ -74,9 +74,9 @@ class DetailNewsViewController: UIViewController {
         news.published = model.published
         news.url = model.url
         news.save {
-            print("Save")
-        } fail: { err in
-            print("Save news fail: \(err.localizedDescription)")
+            self.alert(title: Localized.success, message: Localized.success)
+        } fail: { _ in
+            self.alert(title: Localized.error, message: Localized.cannotLoadData)
         }
     }
     
@@ -91,16 +91,12 @@ class DetailNewsViewController: UIViewController {
         guard let url = URL(string: model?.thread.mainImage ?? Query.urlNoImage) else {
             return
         }
-        imageView.loadImage(url: url) { _ in
-            self.alert(title: Localized.error, message: Localized.cannotLoadData)
+        imageView.loadImage(url: url) { [weak self] _ in
+            self?.alert(title: Localized.error, message: Localized.cannotLoadData)
         }
         
         // Date Formatter
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        guard let date = dateFormatter.date(from: model?.published ?? "") else {
-            return
-        }
-        published.text = dateFormatter.string(from: date)
+        let date = Date()
+        published.text = date.toString()
     }
 }

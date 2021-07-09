@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Localize_Swift
 
 class SettingViewController: UIViewController {
     @IBOutlet weak private var tableView: UITableView!

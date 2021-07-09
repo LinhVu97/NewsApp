@@ -42,6 +42,7 @@
 		C4842473268CB51C00F2430E /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4842471268CB51C00F2430E /* WKWebViewController.swift */; };
 		C4842474268CB51C00F2430E /* WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4842472268CB51C00F2430E /* WKWebViewController.xib */; };
 		C49EDF8C268EB4F400CC526D /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49EDF8B268EB4F400CC526D /* Query.swift */; };
+		C4A3E8292697DE68009F7171 /* ExtensionFormateDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E8282697DE68009F7171 /* ExtensionFormateDate.swift */; };
 		C4AC9E71268A1C4800823D12 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E70268A1C4800823D12 /* APIRequest.swift */; };
 		C4AC9E73268A298000823D12 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E72268A298000823D12 /* APIResponse.swift */; };
 		C4AC9E75268A304A00823D12 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC9E74268A304A00823D12 /* APIKey.swift */; };
@@ -116,6 +117,7 @@
 		C4842471268CB51C00F2430E /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		C4842472268CB51C00F2430E /* WKWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKWebViewController.xib; sourceTree = "<group>"; };
 		C49EDF8B268EB4F400CC526D /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		C4A3E8282697DE68009F7171 /* ExtensionFormateDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFormateDate.swift; sourceTree = "<group>"; };
 		C4AC9E70268A1C4800823D12 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		C4AC9E72268A298000823D12 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		C4AC9E74268A304A00823D12 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				C4DA066B2692DF07008C8768 /* Localized.swift */,
 				C453FB1D26953D8000BB08DC /* ExtensionsImageView.swift */,
 				C4B7FAE42696E3AB00E967A6 /* ExtensionNSManagedObj.swift */,
+				C4A3E8282697DE68009F7171 /* ExtensionFormateDate.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				C453FB1E26953D8000BB08DC /* ExtensionsImageView.swift in Sources */,
 				C4054F71268433DF00128F3E /* NewsApp.xcdatamodeld in Sources */,
 				C450B9BF2695E83F00C6BE1C /* NewsCore+CoreDataProperties.swift in Sources */,
+				C4A3E8292697DE68009F7171 /* ExtensionFormateDate.swift in Sources */,
 				C4B7FAE52696E3AB00E967A6 /* ExtensionNSManagedObj.swift in Sources */,
 				C44EAFFD268447EF00277DE6 /* Extensions.swift in Sources */,
 				C44EAFF62684424600277DE6 /* AboutViewController.swift in Sources */,

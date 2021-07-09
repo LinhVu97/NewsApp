@@ -24,9 +24,6 @@ class HistoryViewController: UIViewController {
                                                             style: .plain,
                                                             target: self,
                                                             action: #selector(removeNews))
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,15 +33,18 @@ class HistoryViewController: UIViewController {
     
     // Fetch Data
     private func fetchData() {
-        NewsCore.all(predicate: nil) { news in
+        NewsCore.all(predicate: nil) { [weak self] news in
             if let news = news as? [NewsCore] {
                 _ = news.map { new in
-                    self.historyNews.append(News(thread: NewsDetail(mainImage: new.image),
+                    self?.historyNews.append(News(thread: NewsDetail(mainImage: new.image),
                                                  author: new.author,
                                                  text: new.text,
                                                  url: new.url ?? "",
                                                  title: new.title ?? "",
                                                  published: new.published))
+                    DispatchQueue.main.async {
+                        self?.tableView.reloadData()
+                    }
                 }
             }
         } fail: { err in
