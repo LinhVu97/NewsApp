@@ -6,22 +6,35 @@
   
 */
 
+// Tabbar
 "Tabbar.Home" = "Trang Chủ";
 "Tabbar.Search" = "Tìm kiếm";
 "Tabbar.Setting" = "Cài đặt";
+
+// Category
 "Category.ButtonBusiness" = "Kinh doanh";
 "Category.ButtonTechnology" = "Công nghệ";
 "Category.ButtonSports" = "Thể thao";
+
+// Setting
 "Setting.History" = "Lịch sử";
 "Setting.Change Language" = "Chuyển ngôn ngữ";
 "Setting.Privacy Policy" = "Chính sách bảo mật";
 "Setting.About Us" = "Về chúng tôi";
+
+// Alert
 "Alert.Title.Error" = "Lỗi";
 "Alert.Message.Cannot load data" = "Không lấy được dữ liệu";
 "Alert.Action.OK" = "OK";
 "Alert.Action.Cancel" = "Huỷ";
 "Alert.Message.Do you want add to history ?" = "Bạn có muốn thêm vào lịch sử không ?";
 "Alert.Message.Success !!!" = "Thành Công !!!";
+
+// Empty View
+"EmptyView.No Data" = "Không có dữ liệu";
+"EmptyView.Data Display !!!" = "Dữ liệu sẽ hiện thị ở đây !!!";
+
+// Change Language
 "Language.English" = "Tiếng Anh";
 "Language.French" = "Tiếng Pháp";
 "Language.Vietnamese" = "Tiếng việt";

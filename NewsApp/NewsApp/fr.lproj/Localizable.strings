@@ -6,23 +6,35 @@
   
 */
 
-
+// Tabbar
 "Tabbar.Home" = "Domicile";
 "Tabbar.Search" = "Rechercher";
 "Tabbar.Setting" = "Réglage";
+
+// Category
 "Category.ButtonBusiness" = "Affaires";
 "Category.ButtonTechnology" = "La technologie";
 "Category.ButtonSports" = "Sports";
+
+// Setting
 "Setting.History" = "Histoire";
 "Setting.Change Language" = "Changer de langue";
 "Setting.Privacy Policy" = "Politique de confidentialité";
 "Setting.About Us" = "À propos";
+
+// Alert
 "Alert.Title.Error" = "Erreur";
 "Alert.Message.Cannot load data" = "Impossible de charger les données";
 "Alert.Action.OK" = "d'accord";
 "Alert.Action.Cancel" = "Annuler";
 "Alert.Message.Do you want add to history ?" = "Voulez-vous ajouter à l'histoire ?";
 "Alert.Message.Success !!!" = "Succès";
+
+// Empty View
+"EmptyView.No Data" = "Pas de données";
+"EmptyView.Data Display !!!" = "Affichage des données ici";
+
+// Change Language
 "Language.English" = "Anglaise";
 "Language.French" = "français";
 "Language.Vietnamese" = "Vietnamienne";

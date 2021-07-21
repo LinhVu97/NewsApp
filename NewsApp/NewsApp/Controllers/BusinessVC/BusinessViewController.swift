@@ -9,7 +9,7 @@ import UIKit
 
 class BusinessViewController: UIViewController {
     @IBOutlet weak private var tableView: UITableView! 
-    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak private var indicator: UIActivityIndicatorView!
     
     var businessNews = [News]()
     
@@ -19,12 +19,14 @@ class BusinessViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         getData()
+        refreshData()
     }
 
-    // Get Data
+    // MARK: - Get Data
     private func getData() {
         setupIndicator(indicator)
-        APIService<Posts>.init(request: APIRequest(query: Categories.business.rawValue, method: .GET)).callAPI { [weak self] result in
+        APIService<Posts>.init(request: APIRequest(query: Categories.business.rawValue,
+                                                   method: .GET)).callAPI { [weak self] result in
             switch result {
             case .success(let posts):
                 DispatchQueue.main.async {
@@ -35,15 +37,36 @@ class BusinessViewController: UIViewController {
             case .failure(let err):
                 DispatchQueue.main.async {
                     self?.alert(title: Localized.error, message: Localized.cannotLoadData)
+                    self?.indicator.stopAnimating()
+                    self?.indicator.isHidden = true
                 }
                 print(err)
             }
+        }
+    }
+    
+    // MARK: - Refresh Table View
+    private func refreshData() {
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(actionRefresh), for: .valueChanged)
+    }
+    
+    @objc func actionRefresh() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.tableView.refreshControl?.endRefreshing()
+            self.getData()
         }
     }
 }
 
 extension BusinessViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if businessNews.count == 0 {
+            let vc = EmptyViewController()
+            tableView.addSub(tableView, vc)
+        } else {
+            tableView.restore()
+        }
         return businessNews.count
     }
     
@@ -56,7 +79,7 @@ extension BusinessViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.model(businessNews.title,
+        cell.setupCell(businessNews.title,
                    businessNews.text ?? "No Description",
                    businessNews.thread.mainImage ?? Query.urlNoImage)
         return cell

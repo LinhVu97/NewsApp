@@ -15,6 +15,7 @@
                 <outlet property="scrollView" destination="HJ7-Df-GYq" id="n1n-bx-N2E"/>
                 <outlet property="sportButton" destination="yCf-yY-rj2" id="Khv-9i-E2b"/>
                 <outlet property="sportView" destination="8wW-Db-QpX" id="X4z-Yf-lPv"/>
+                <outlet property="stackView" destination="4rX-Ci-Es9" id="WXU-pD-8dx"/>
                 <outlet property="techButton" destination="tEg-NY-Fu5" id="RXl-O5-TEP"/>
                 <outlet property="techView" destination="OBQ-ai-4mo" id="Me0-Ce-1yg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
