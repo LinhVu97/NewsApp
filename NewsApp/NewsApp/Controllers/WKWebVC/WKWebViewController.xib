@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WKWebViewController" customModule="NewsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="YDI-mX-pL9" id="HYg-Jc-IRI"/>
+                <outlet property="fowardButton" destination="NFe-7V-LE9" id="fpB-HI-lEw"/>
+                <outlet property="reloadButton" destination="lua-cy-wgw" id="jA9-nU-fIJ"/>
+                <outlet property="spinner" destination="xdw-TF-l5Q" id="zUM-zI-BjB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="VvL-Ey-EpS" id="fQ3-Gz-IAM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slK-IH-JDU">
+                    <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                    <items>
+                        <barButtonItem title="Item" image="arrowshape.turn.up.backward.fill" catalog="system" id="YDI-mX-pL9" userLabel="Back">
+                            <connections>
+                                <action selector="backButton:" destination="-1" id="7aa-qJ-C0k"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem image="arrowshape.turn.up.forward.fill" catalog="system" id="NFe-7V-LE9" userLabel="Foward">
+                            <connections>
+                                <action selector="fowardButton:" destination="-1" id="Rdb-ZP-1EO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="AgU-dG-sNa" userLabel="Space">
+                            <view key="customView" contentMode="scaleToFill" id="HOw-gB-Yeg">
+                                <rect key="frame" x="87" y="9" width="244" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem systemItem="refresh" id="lua-cy-wgw" userLabel="Reload">
+                            <connections>
+                                <action selector="reloadButton:" destination="-1" id="kql-7t-zwF"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </toolbar>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-Ey-EpS">
+                    <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="xdw-TF-l5Q">
+                    <rect key="frame" x="157" y="398" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="aak-G9-XSe"/>
+                        <constraint firstAttribute="height" constant="100" id="ewy-T1-4G1"/>
+                    </constraints>
+                    <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VvL-Ey-EpS" secondAttribute="trailing" id="56X-n8-mbo"/>
+                <constraint firstItem="slK-IH-JDU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B5L-Ga-kfB"/>
+                <constraint firstItem="VvL-Ey-EpS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HLy-f6-xmO"/>
+                <constraint firstItem="slK-IH-JDU" firstAttribute="top" secondItem="VvL-Ey-EpS" secondAttribute="bottom" id="QA1-jh-1XY"/>
+                <constraint firstItem="VvL-Ey-EpS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZtO-gK-ugt"/>
+                <constraint firstItem="xdw-TF-l5Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iI8-t7-OkH"/>
+                <constraint firstItem="xdw-TF-l5Q" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jzv-li-rw4"/>
+                <constraint firstItem="slK-IH-JDU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="md7-WP-8H9"/>
+                <constraint firstItem="slK-IH-JDU" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="mfX-gf-FpC"/>
+            </constraints>
+            <point key="canvasLocation" x="27.536231884057973" y="92.410714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.turn.up.forward.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

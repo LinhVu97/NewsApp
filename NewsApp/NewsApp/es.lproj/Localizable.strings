@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  NewsApp
+
+  Created by Vũ Linh on 05/07/2021.
+  
+*/
+
+"Home" = "Casa";
+"Search" = "Buscar";
+"Setting" = "Configuración";
+"Business" = "Negocio";
+"Technology" = "Tecnología";
+"Sports" = "Deporte";
+"History" = "Historia";
+"Change Language" = "Cambiar idioma";
+"Privacy Policy" = "Política de privacidad";
+"About" = "Acerca de";
+"Error" = "Error";
+"Cannot load data" = "No se pueden cargar datos";
+"OK" = "OK";
+"ABC News is a global diversified media and information services company focused on creating and distributing authoritative and engaging content to consumers and businesses throughout the world. The company comprises businesses across a range of media, including: news and information services, book publishing, digital real estate services, cable network programming in Australia and pay-TV distribution in Australia."
+=
+"ABC News es una empresa global diversificada de servicios de información y medios de comunicación centrada en la creación y distribución de contenido autoritario y atractivo para consumidores y empresas de todo el mundo. La empresa comprende empresas de una amplia gama de medios, que incluyen: servicios de noticias e información, publicación de libros, servicios inmobiliarios, programación de redes de cable en Australia y distribución de televisión de pago en Australia";

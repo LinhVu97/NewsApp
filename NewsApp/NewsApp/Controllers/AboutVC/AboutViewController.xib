@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="NewsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionAbout" destination="laa-xt-jEu" id="Obf-V9-iOI"/>
+                <outlet property="titleAbout" destination="VgP-dQ-qSo" id="0dN-zk-Nma"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abc-news-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z2D-A7-m5f">
+                    <rect key="frame" x="50" y="44" width="314" height="158"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgP-dQ-qSo">
+                    <rect key="frame" x="50" y="222" width="314" height="25.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laa-xt-jEu">
+                    <rect key="frame" x="20" y="267.5" width="374" height="211.5"/>
+                    <string key="text">ABC News is a global diversified media and information services company focused on creating and distributing authoritative and engaging content to consumers and businesses throughout the world. The company comprises businesses across a range of media, including: news and information services, book publishing, digital real estate services, cable network programming in Australia and pay-TV distribution in Australia.</string>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-us" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-pM-YhE">
+                    <rect key="frame" x="10" y="499" width="394" height="323"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bbI-pM-YhE" secondAttribute="trailing" constant="10" id="1y0-4x-LWe"/>
+                <constraint firstItem="laa-xt-jEu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3US-UE-ydL"/>
+                <constraint firstItem="bbI-pM-YhE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="3u9-DA-BXq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z2D-A7-m5f" secondAttribute="trailing" constant="50" id="95x-zO-Rsu"/>
+                <constraint firstItem="bbI-pM-YhE" firstAttribute="top" secondItem="laa-xt-jEu" secondAttribute="bottom" constant="20" id="Cv0-H8-Q1J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VgP-dQ-qSo" secondAttribute="trailing" constant="50" id="HMS-cR-krG"/>
+                <constraint firstItem="VgP-dQ-qSo" firstAttribute="top" secondItem="Z2D-A7-m5f" secondAttribute="bottom" constant="20" id="JbS-bR-XVt"/>
+                <constraint firstItem="Z2D-A7-m5f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="UO1-GU-hu2"/>
+                <constraint firstItem="VgP-dQ-qSo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Ucu-5Q-geg"/>
+                <constraint firstItem="Z2D-A7-m5f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dMy-QQ-Wpe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bbI-pM-YhE" secondAttribute="bottom" constant="40" id="gIi-G0-Qfo"/>
+                <constraint firstItem="VgP-dQ-qSo" firstAttribute="top" secondItem="Z2D-A7-m5f" secondAttribute="bottom" constant="20" id="gbD-MP-Cf8"/>
+                <constraint firstItem="Z2D-A7-m5f" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.176339" id="mih-7f-Toy"/>
+                <constraint firstItem="laa-xt-jEu" firstAttribute="top" secondItem="VgP-dQ-qSo" secondAttribute="bottom" constant="20" id="p32-jo-Os8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="laa-xt-jEu" secondAttribute="trailing" constant="20" id="sj6-Uh-Mrl"/>
+                <constraint firstItem="laa-xt-jEu" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.180246" constant="50" id="vVa-QB-HP6"/>
+                <constraint firstItem="VgP-dQ-qSo" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0284598" id="ygQ-lY-3iw"/>
+            </constraints>
+            <point key="canvasLocation" x="113.04347826086958" y="87.723214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="abc-news-logo" width="450" height="250"/>
+        <image name="about-us" width="331.5" height="361.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

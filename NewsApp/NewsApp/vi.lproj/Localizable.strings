@@ -1,0 +1,43 @@
+/*
+  Localizable.strings
+  NewsApp
+
+  Created by Vũ Linh on 05/07/2021.
+  
+*/
+
+// Tabbar
+"Tabbar.Home" = "Trang Chủ";
+"Tabbar.Search" = "Tìm kiếm";
+"Tabbar.Setting" = "Cài đặt";
+
+// Category
+"Category.ButtonBusiness" = "Kinh doanh";
+"Category.ButtonTechnology" = "Công nghệ";
+"Category.ButtonSports" = "Thể thao";
+
+// Setting
+"Setting.History" = "Lịch sử";
+"Setting.Change Language" = "Chuyển ngôn ngữ";
+"Setting.Privacy Policy" = "Chính sách bảo mật";
+"Setting.About Us" = "Về chúng tôi";
+
+// Alert
+"Alert.Title.Error" = "Lỗi";
+"Alert.Message.Cannot load data" = "Không lấy được dữ liệu";
+"Alert.Action.OK" = "OK";
+"Alert.Action.Cancel" = "Huỷ";
+"Alert.Message.Do you want add to history ?" = "Bạn có muốn thêm vào lịch sử không ?";
+"Alert.Message.Success !!!" = "Thành Công !!!";
+
+// Empty View
+"EmptyView.No Data" = "Không có dữ liệu";
+"EmptyView.Data Display !!!" = "Dữ liệu sẽ hiện thị ở đây !!!";
+
+// Change Language
+"Language.English" = "Tiếng Anh";
+"Language.French" = "Tiếng Pháp";
+"Language.Vietnamese" = "Tiếng việt";
+"ABC News is a global diversified media and information services company focused on creating and distributing authoritative and engaging content to consumers and businesses throughout the world. The company comprises businesses across a range of media, including: news and information services, book publishing, digital real estate services, cable network programming in Australia and pay-TV distribution in Australia."
+=
+"ABC News là một công ty dịch vụ thông tin và truyền thông đa dạng toàn cầu, tập trung vào việc tạo và phân phối nội dung có thẩm quyền và hấp dẫn cho người tiêu dùng và các doanh nghiệp trên toàn thế giới. Công ty bao gồm các doanh nghiệp trên nhiều phương tiện truyền thông, bao gồm: dịch vụ tin tức và thông tin, xuất bản sách, dịch vụ bất động sản kỹ thuật số, lập trình mạng cáp ở Úc và phân phối truyền hình trả tiền ở Úc.";

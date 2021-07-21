@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  NewsApp
+
+  Created by Vũ Linh on 05/07/2021.
+  
+*/
+
+// Tabbar
+"Tabbar.Home" = "Home";
+"Tabbar.Search" = "Search";
+"Tabbar.Setting" = "Setting";
+
+// Category
+"Category.ButtonBusiness" = "Business";
+"Category.ButtonTechnology" = "Technology";
+"Category.ButtonSports" = "Sports";
+
+// Setting
+"Setting.History" = "History";
+"Setting.Change Language" = "Change Language";
+"Setting.Privacy Policy" = "Privacy Policy";
+"Setting.About Us" = "About Us";
+
+// Alert
+"Alert.Title.Error" = "Error";
+"Alert.Message.Cannot load data" = "Cannot load data";
+"Alert.Action.OK" = "OK";
+"Alert.Action.Cancel" = "Cancel";
+"Alert.Message.Do you want add to history ?" = "Do you want add to history ?";
+"Alert.Message.Success !!!" = "Success !!!";
+
+// Empty View
+"EmptyView.No Data" = "No Data";
+"EmptyView.Data Display !!!" = "Data display here !!!";
+
+// Change language
+"Language.English" = "English";
+"Language.French" = "French";
+"Language.Vietnamese" = "Vietnamese";
+"ABC News is a global diversified media and information services company focused on creating and distributing authoritative and engaging content to consumers and businesses throughout the world. The company comprises businesses across a range of media, including: news and information services, book publishing, digital real estate services, cable network programming in Australia and pay-TV distribution in Australia."
+=
+"ABC News is a global diversified media and information services company focused on creating and distributing authoritative and engaging content to consumers and businesses throughout the world. The company comprises businesses across a range of media, including: news and information services, book publishing, digital real estate services, cable network programming in Australia and pay-TV distribution in Australia.";
